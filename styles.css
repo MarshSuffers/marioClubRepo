@@ -55,6 +55,7 @@ nav {
   text-decoration: none;
   padding: 30px;
   max-width: 100%;
+  margin-top: -5px;
 }
 
 nav ul {
@@ -74,6 +75,7 @@ nav li {
 .links a {
   color: #f63232;
   text-decoration: none;
+  margin-top: -5px;
 }
 
 .links a:hover {
@@ -103,6 +105,7 @@ nav li {
   text-align: center;
   padding: 5px;
   margin: 5px;
+  z-index: 2;
 }
 
 .dropLinks a {
@@ -133,7 +136,7 @@ hr {
 .contactContent {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
+  background-color: #4b4b4b;
   min-width: 130px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
@@ -222,8 +225,19 @@ footer {
   .banner .welcome {
     font-size: 28px;
   }
+  nav {
+    padding: 0;
+    margin: 0;
+    top: 130px;
+  }
   nav li {
-    font-size: 18px;
+    font-size: 22px;
+  }
+  .dropButton {
+    font-size: 22px;
+  }
+  .contactDropdown {
+    font-size: 22px;
   }
 }
 
@@ -239,8 +253,17 @@ footer {
   .banner .welcome span {
     font-size: 1em;
   }
+  nav {
+    position: static;
+  }
   nav li {
-    font-size: 18px;
+    display: block;
+    height: 40px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    top: auto;
   }
   .images li {
     width: 100%;
@@ -261,17 +284,11 @@ footer {
   .banner .welcome span {
     font-size: 1em;
   }
-  nav li {
-    display: block;
-    width: 100%;
-    margin: 12px 0;
-  }
   article h2 {
     font-size: 36px;
   }
-  header,
-  nav {
+  header {
     position: relative;
     top: 0;
-  }
+
 }
