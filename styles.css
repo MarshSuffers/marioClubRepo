@@ -46,34 +46,98 @@ header h1 {
 .banner .welcome span {
   font-size: 1.4em;
 }
+
 nav {
-  background: #f4f4f4;
-  padding: 20px;
   position: sticky;
-  top: 106px;
-  z-index: 1;
+  background-color: #4b4b4b;
+  top: 110px;
+  font-size: 30px;
 }
-nav ul {
-  white-space: nowrap;
-  max-width: 1200px;
-  margin: 0 auto;
+
+nav h1 {
+  background-color: #f63232;
+  border: solid;
+  border-radius: 75px;
+  border-color: #f4f4f4;
   text-align: center;
-}
-nav li {
-  width: 25%;
+  width: 400px;
+  margin-top: 10px;
+  margin-left: 5%;
   display: inline-block;
-  font-size: 24px;
 }
-nav li a {
-  text-decoration: none;
+
+nav h1 a {
+  color: #f4f4f4;
+}
+
+nav h1 a:hover {
   color: #4b4b4b;
 }
-nav li a:hover {
-  text-decoration: underline;
-}
-nav li a.join {
+
+.links a {
   color: #f63232;
+  display: inline-block;
+  border: solid;
+  width: 10%;
 }
+
+.links a:hover {
+  color: #f4f4f4;
+}
+
+.dropdown {
+  position: relative;
+}
+
+.dropButton {
+  background-color: #4b4b4b;
+  color: #f4f4f4;
+  border: none;
+  font-size: 30px;
+  display: inline-block;
+  width: 10%;
+  border: solid;
+}
+
+.dropLinks {
+  position: absolute;
+  display: none;
+  background-color: #feb614;
+  min-width: 130 px;
+}
+
+.dropLinks a {
+  font-size: 24px;
+}
+
+.dropLinks a:hover {
+  color: #4b4b4b;
+}
+
+.dropdown:hover .dropLinks {
+  display: block;
+}
+
+.contactDropdown {
+  position: relative;
+  display: inline-block;
+  width: 10%;
+  border: solid;
+}
+
+.contactContent {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 130px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+}
+
+.contactDropdown:hover .contactContent {
+  display: block;
+}
+
 main {
   max-width: 100%;
   width: 1200px;
