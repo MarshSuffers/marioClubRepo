@@ -8,29 +8,54 @@
   </head>
   <body>
     <header>
-      <nav class="main-nav">
-        <h1><a href="index.html">Marioclub</a></h1>
-        <div class="links">
-          <a href="joinForm.html">Join Us</a>
-          <label for="news">News</label>
-          <select class="news">
-            <option>Latest News</option>
-            <option>Old News</option>
-          </select>
-          <label for="games">Games</label>
-          <select class="games">
-            <option>Mario 1</option>
-            <option>Mario Oddysey</option>
-            <option>Mario 64</option>
-          </select>
-          <a href="contact.html">Contact</a>
-        </div>
-      </nav>
-      <section class="banner">
-        <h2>Old News</h2>
-        <img src="temp" alt="this will have an image one day" />
-      </section>
+      <a href="index.html"><h1>Marioclub</h1><a/>
     </header>
+    <section class="banner">
+      <img src="/img/banner.png" alt="marioclub welcome banner" />
+      <div class="welcome">
+        <h2>
+          Welcome to <br /><span>Marioclub</span>
+        </h2>
+      </div>
+    </section>
+    <nav class="main-nav">
+      <div class="links">
+        <ul>
+          <li><a href="joinForm.html">Join Us</a></li>
+          <li>
+            <div class="dropdown">
+              <button class="dropButton">News</button>
+              <div class="dropLinks">
+                <a href="news1.html">Latest News</a>
+                <hr>
+                <a href="news2.html">Old News</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="dropdown">
+              <button class="dropButton">Games</button>
+              <div class="dropLinks">
+                <a href="marioOne.html">Super Mario</a>
+                <hr>
+                <a href="mario64.html">Super Mario64</a>
+                <hr>
+                <a href="marioOddysey.html"> Super Mario Oddysey</a>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="contactDropdown">
+              Contact
+              <div class="contactContent">
+                ###-###-#### <br />
+                notanemail@gmail.com
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
     <main>
       <article class="newsArticle">
         <h3>Old news 1</h3>
@@ -40,7 +65,7 @@
           temporibus. Doloremque voluptate eveniet molestiae, porro hic
           veritatis maxime perferendis officiis facere cumque?
         </p>
-        <img />
+        <img src="/img/thumb-2.png"/>
       </article>
       <article class="newsArticle">
         <h3>Old news 2</h3>
@@ -50,7 +75,7 @@
           consequatur dolorem sapiente adipisci recusandae porro, eius harum
           asperiores ex quo fuga. Qui, esse.
         </p>
-        <img />
+        <img src="/img/thumb-2.png"/>
       </article>
       <article class="newsArticle">
         <h3>Old news 3</h3>
@@ -60,7 +85,7 @@
           dolorem consequatur, molestiae, possimus quis alias est earum
           obcaecati qui fuga!
         </p>
-        <img />
+        <img src="/img/thumb-2.png"/>
       </article>
     </main>
     <footer>

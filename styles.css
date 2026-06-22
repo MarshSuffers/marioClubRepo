@@ -52,33 +52,28 @@ nav {
   background-color: #4b4b4b;
   top: 110px;
   font-size: 30px;
+  text-decoration: none;
+  padding: 30px;
+  max-width: 100%;
 }
 
-nav h1 {
-  background-color: #f63232;
-  border: solid;
-  border-radius: 75px;
-  border-color: #f4f4f4;
+nav ul {
   text-align: center;
-  width: 400px;
-  margin-top: 10px;
-  margin-left: 5%;
-  display: inline-block;
 }
 
-nav h1 a {
-  color: #f4f4f4;
-}
-
-nav h1 a:hover {
-  color: #4b4b4b;
+nav li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -20px;
+  background-color: #4b4b4b;
+  width: 25%;
+  float: right;
 }
 
 .links a {
   color: #f63232;
-  display: inline-block;
-  border: solid;
-  width: 10%;
+  text-decoration: none;
 }
 
 .links a:hover {
@@ -94,16 +89,20 @@ nav h1 a:hover {
   color: #f4f4f4;
   border: none;
   font-size: 30px;
-  display: inline-block;
-  width: 10%;
-  border: solid;
 }
 
 .dropLinks {
   position: absolute;
   display: none;
   background-color: #feb614;
-  min-width: 130 px;
+  border: solid;
+  border-color: #feb614;
+  border-radius: 15px;
+  text-decoration: none;
+  min-width: 200px;
+  text-align: center;
+  padding: 5px;
+  margin: 5px;
 }
 
 .dropLinks a {
@@ -115,14 +114,20 @@ nav h1 a:hover {
 }
 
 .dropdown:hover .dropLinks {
-  display: block;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 33%;
+}
+
+hr {
+  padding: 0;
+  margin: 0;
 }
 
 .contactDropdown {
   position: relative;
-  display: inline-block;
-  width: 10%;
-  border: solid;
+  color: #f4f4f4;
 }
 
 .contactContent {
