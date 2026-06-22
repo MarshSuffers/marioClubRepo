@@ -53,9 +53,10 @@ nav {
   top: 110px;
   font-size: 30px;
   text-decoration: none;
-  padding: 30px;
+  padding: 0px;
   max-width: 100%;
   margin-top: -5px;
+  z-index: 2;
 }
 
 nav ul {
@@ -66,10 +67,9 @@ nav li {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  margin-top: -20px;
   background-color: #4b4b4b;
   width: 25%;
-  height: 100%;
+  max-height: 200px;
   float: right;
 }
 
@@ -77,6 +77,7 @@ nav li {
   color: #f63232;
   text-decoration: none;
   margin-top: -5px;
+  font-family: tahoma;
 }
 
 .links a:hover {
@@ -92,6 +93,9 @@ nav li {
   color: #f4f4f4;
   border: none;
   font-size: 30px;
+  font-family: tahoma;
+  margin: 0;
+  padding: 0;
 }
 
 .dropLinks {
@@ -106,7 +110,8 @@ nav li {
   text-align: center;
   padding: 5px;
   margin: 5px;
-  z-index: 2;
+  z-index: 3;
+  font-family: tahoma;
 }
 
 .dropLinks a {
@@ -132,6 +137,8 @@ hr {
 .contactDropdown {
   position: relative;
   color: #f4f4f4;
+  margin: 0;
+  padding: 0;
 }
 
 .contactContent {
@@ -183,6 +190,7 @@ article p::first-line {
 }
 .images li img {
   max-width: 100%;
+  z-index: 1;
 }
 section.join {
   background: #f4f4f4;
@@ -229,11 +237,11 @@ footer {
   nav {
     padding: 0;
     margin: 0;
-    top: 130px;
+    margin-top: -10px;
+    top: 110px;
   }
   nav li {
     font-size: 22px;
-    padding: 10px;
   }
   .dropButton {
     font-size: 22px;
@@ -248,6 +256,7 @@ footer {
     font-size: 20px;
     position: relative;
     text-align: center;
+    margin-top: -10px;
   }
   .banner .welcome br {
     display: none;
@@ -258,14 +267,16 @@ footer {
   nav {
     position: static;
   }
+  nav ul {
+    margin-top: 10px;
+  }
   nav li {
     display: block;
     height: 40px;
     width: 100%;
     padding: 0;
-    margin: 10px;
+    margin: 0;
     float: left;
-    top: auto;
   }
   .images li {
     width: 100%;
